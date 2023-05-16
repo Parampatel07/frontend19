@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Inputs</title>
+</head>
+
+<body>
+     <form action="" method="post">
+          <table border="2" width="50%" cellpadding="5" align="center">
+               <tr>
+                    <td>
+                         <label for="user_label">
+                              Enter your name
+                         </label>
+                    </td>
+                    <td>
+                         <input type="text" name="username" id="user_label" placeholder="Your name goes here" required> 
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="">
+                              Enter your email
+                         </label>
+                    </td>
+                    <td>
+                         <input type="email" name="email" id="user_email" placeholder="Enter your email here" required>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="">
+                              Enter your Password
+                         </label>
+                    </td>
+                    <td>
+                         <input type="password" name="password" id="password" placeholder="Password goes here" required>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="">
+                              Select your birthdate
+                         </label>
+                    </td>
+                    <td>
+                         <input type="date" name="birthdate" id="birthdate" required>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         Select your gender
+                    </td>
+                    <td>
+                         <input type="radio" name="gender" id="male_radio" value="1"><label for="male_radio">Male</label>
+                         <input type="radio" name="gender" id="female_radio" value="0"><label for="female_radio">Female</label>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         Select your hobbies 
+                    </td>
+                    <td>
+                         <input type="checkbox" id="hobbie_hockey"  name="hobbies" value="1"><label for="hobbie_hockey">Hockey</label>
+                         <input type="checkbox" name="hobbies" value="2">Cricket
+                         <input type="checkbox" name="hobbies" value="3">Coding
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         Select your city
+                    </td>
+                    <td>
+                         <select name="city">
+                              <option value="1" disabled>Ahmedabad</option>
+                              <option value="2">Surat</option>
+                              <option value="3">Bhavnagar</option>
+                         </select>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         Enter your address
+                    </td>
+                    <td>
+                         <textarea name="address" cols="30" rows="2"></textarea>
+                    </td>
+               </tr>
+               <tr>
+                    <td colspan="2" align="center">
+                         <input type="submit" value="Submit">
+                    </td>
+               </tr>
+          </table>
+     </form>
+</body>
+
+</html>
