@@ -1,0 +1,20 @@
+#parentdiv
+{
+     font-size:1.4rem ;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: rgb(255, 220, 220);
+     border: 2px solid black;
+     margin-left: 20px;
+     margin-right: 20px;
+     padding: 10px;
+     display: grid;
+     grid-template-columns: 1fr 1fr ;
+     /* grid-template-rows: 1fr ; */
+     gap: 10px;
+}
+#parentdiv > p
+{
+     background-color: rgb(231, 210, 253);
+     border: 2px solid black;
+     padding: 10px;
+}

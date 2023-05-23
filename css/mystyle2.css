@@ -1,0 +1,39 @@
+*
+{
+     margin: 0px;
+     padding: 0px;
+}
+div
+{
+     font-size: 1.4rem;
+     margin-top: 50px;
+     margin-left: 70px;
+     margin-right: 20px;
+     background-color: rgb(252, 235, 203);
+     padding: 10px;
+     width: 80%;
+}
+a:link
+{
+     color: rgb(224, 46, 46);
+}
+a:visited
+{
+     color: green;
+}
+#second_paragraph:hover
+{
+     background-color: rgb(217, 191, 241);
+     border: 2px solid black;
+}
+#first_paragraph:hover
+{
+     border-bottom: 2px solid black;
+     border-left: 2px solid black;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+a:hover
+{
+     color: black;
+}

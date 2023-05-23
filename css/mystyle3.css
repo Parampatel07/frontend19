@@ -1,0 +1,24 @@
+.background_image {
+     margin-left: 20px;
+     margin-right: 20px;
+     font-size: 1.5rem;
+     background-image: url("../images/background_image1.jpg");
+     background-repeat: no-repeat;
+     /* background-position: center; */
+     background-size: cover;
+     padding: 20px;
+     height: 400px;
+     width: 94%;
+     /* opacity: 0.5; */
+     filter: blur(3px);
+     /* backdrop-filter: blur(50px); */
+}
+.my_text
+{
+     position: absolute;
+     top: 100px;
+     left: 50px;
+     font-size: 1.5rem;
+     line-height: 30px;
+     letter-spacing: 2.5px;
+}

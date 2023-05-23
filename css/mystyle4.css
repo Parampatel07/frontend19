@@ -1,0 +1,18 @@
+div > p
+{
+     font-size: 1.3rem;
+     background-color: rgb(243, 231, 255);
+     border: 2px solid black;
+     padding: 10px;
+}
+div
+{
+     margin-left: 20px;
+     margin-right: 20px;
+     display: flex;
+     gap: 10px;
+}
+#second_div>p
+{
+     background-color: rgb(241, 212, 173);
+}
