@@ -1,0 +1,93 @@
+        /* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
+        @media (min-width: 1281px) {
+
+             /* code in this block will be applied only if device width>1281 */
+             #navbar {
+                  gap: 550px;
+             }
+        }
+
+        /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
+        @media (min-width: 1025px) and (max-width: 1280px) {
+
+             /* code in this block will be applied only if device width>1025 and <1280 */
+             #navbar {
+                  gap: 255px;
+             }
+        }
+
+        /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+        @media (min-width: 768px) and (max-width: 1024px) {
+
+             /* code in this block will be applied only if device width>768 and <1024 */
+             #navbar {
+                  gap: 325px;
+             }
+        }
+
+        /* ##Device = Low Resolution Tablets,  ##Screen = B/w 481px to 767px */
+        @media (min-width: 481px) and (max-width: 767px) {
+
+             /* code in this block will be applied only if device width>481 and <767 */
+             #navbar {
+                  gap: 100px;
+             }
+        }
+
+        /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */
+        @media (min-width: 320px) and (max-width: 480px) {
+
+             /* code in this block will be applied only if device width>320 and <480 */
+             #navbar {
+                  gap: 25px;
+             }
+        }
+
+        * {
+             margin: 0px;
+             padding: 0px;
+        }
+
+        #navbar {
+             display: flex;
+             background-color: #000000;
+             color: white;
+        }
+
+        #title_text {
+             margin-top: 25px;
+             font-size: 2.2rem;
+             font-family: 'Mogra', cursive;
+        }
+
+        .nav_link:link,
+        .nav_link:visited,
+        .nav_link:active {
+             color: white;
+             text-decoration: none;
+             font-family: 'Mogra', cursive;
+        }
+
+        ul {
+             list-style: none;
+          }
+          li
+          {
+               display: inline;
+               margin: 10px;
+        }
+
+        #link_section {
+             margin-top: 40px;
+             font-size: 1.3rem;
+        }
+
+        #icon_text {
+             display: flex;
+             gap: 15px;
+        }
+
+        .nav_link:hover
+        {
+          color: aqua;
+        }
