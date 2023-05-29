@@ -6,7 +6,10 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Foodies</title>
-     <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Mogra&family=Montserrat&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link href="../images/foodies.png" rel="icon">
      <link rel="stylesheet" href="website1.css">
 </head>
@@ -26,15 +29,158 @@
           <div>
                <div id="link_section">
                     <ul>
-                         <li><a href="" class="nav_link">Home</a></li>
-                         <li><a href="" class="nav_link">About us</a></li>
-                         <li><a href="" class="nav_link">Specality</a></li>
-                         <li><a href="" class="nav_link">Reviews</a></li>
+                         <li><a href="#banner" class="nav_link">Home</a></li>
+                         <li><a href="#about_us" class="nav_link">About us</a></li>
+                         <li><a href="#specality" class="nav_link">Specality</a></li>
+                         <li><a href="#reviews" class="nav_link">Reviews</a></li>
                     </ul>
                </div>
           </div>
      </div>
 
+     <div id="banner">
+          <img src="../images/banner2.jpg" id="banner_image" alt="">
+     </div>
+
+     <div class="dummy_div">
+
+     </div>
+     <div id="about_us">
+          <div>
+               <!-- image  -->
+               <img src="../images/banner1.jpeg" id="about_us_image" data-aos="fade-up-right"  alt="" data-aos-duration="2000">
+               <div class="banner_text animate__animated animate__backInUp">
+                    <span class="banner_heading">
+                         Foodies
+                    </span>
+                    <br>
+                    <span class="banner_quote">
+                         Food is love made visible
+                    </span>
+               </div>
+          </div>
+          <div id="about_us_text" data-aos="fade-left" data-aos-duration="3000">
+               <h1>
+                    About us
+               </h1>
+
+               <!-- text comes here  -->
+               <p class="about_us_text_p">
+                    At Foodies , we are passionate about delivering exceptional dining experiences to our customers.
+                    With a perfect blend of culinary expertise, warm hospitality, and a cozy ambiance, we strive to
+                    create memorable moments .
+                    Step into our charming restaurant and be transported to a place of comfort and relaxation.
+               </p>
+          </div>
+     </div>
+     <div class="dummy_div"></div>
+
+     <h1 align="center" class="specality_heading">
+          Our Specality
+     </h1>
+     <div id="specality">
+
+          <div data-aos="fade-left" data-aos-duration="3000">
+               <!-- dish 1  -->
+               <img src="../images/specality (1).jpg" class="special_image" alt="">
+               <p>
+                    A sandwich is a versatile and satisfying food item consisting of various fillings placed between two
+                    slices of bread. It is a popular choice for a quick and delicious meal.
+               </p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="3000">
+               <!-- dish 2  -->
+               <img src="../images/specality (2).jpg" class="special_image" alt="">
+               <p>
+                    Pizza is an iconic and beloved dish that originated in Italy but has become a global favorite. It
+                    typically consists of a round, flat dough base topped with a variety of ingredients and baked to
+                    perfection
+               </p>
+          </div>
+          <div data-aos="fade-up-right" data-aos-duration="3000">
+               <!-- dish 3  -->
+               <img src="../images/specality (3).jpg" class="special_image" alt="">
+               <p>
+                    Ice cream is a delightful frozen dessert that brings joy and sweetness to our taste buds. It is made
+                    by combining milk or cream, sugar, and various flavorings, which are then churned and frozen to
+                    create a creamy and smooth texture.
+               </p>
+          </div>
+     </div>
+     <div class="dummy_div"></div>
+
+     <h1 align="center" class="specality_heading">
+          Offer's
+     </h1>
+     <div id="offers">
+          <div class="my_offers" data-aos="fade-up" data-aos-duration="3000">
+               <img src="../images/offer1.png"  class="offer_image animate__animated animate__rotateIn" alt="">
+               <span class="offers_text">Thursday Special Offer</span>
+          </div>
+          <div class="my_offers" data-aos="fade-up" data-aos-duration="3000">
+               <img src="../images/offer2.png"  class="offer_image animate__animated animate__rotateIn" alt="">
+               <span class="offers_text">20% off on Monday's</span>
+          </div>
+     </div>
+     <div class="dummy_div"></div>
+
+     <h1 align="center" class="specality_heading">
+          Reviews
+     </h1>
+     <div id="reviews">
+          <div class="dummy_height"> </div>
+          <div align="center" id="reviews_div">
+               <form action="" method="post">
+                    <table width="80%" cellpadding="5">
+                         <tr>
+                              <td>
+                                   <span class="reviews_label">Enter your Reviews title *</span>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <input type="text" class="title_input" name="title"
+                                        placeholder="Enter your reviews title ">
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <span class="reviews_label">Enter your reviews description</span>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <textarea name="reviews" id="" class="title_input"></textarea>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td align="right">
+                                   <button class="button-31" type="submit">Submit Review</button>
+                                   <button class="button-31" type="reset">Clear All</button>
+                              </td>
+                         </tr>
+                    </table>
+               </form>
+          </div>
+     </div>
+     <div class="dummy_div"></div>
+
+     <div id="map">
+          <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+               src="https://www.openstreetmap.org/export/embed.html?bbox=72.13528633117677%2C21.743476103769517%2C72.14359045028688%2C21.749335697103696&amp;layer=mapnik"
+               style="border: 1px solid black"></iframe><br /><small><a target="_blank"
+                    href="https://www.openstreetmap.org/#map=17/21.74641/72.13944">View Larger Map</a></small>
+     </div>
+
+     <div class="dummy_div"></div>
+     <div id="footer" align="center">
+          Copyright 2023 | Frontend 19
+     </div>
+
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+          AOS.init();
+     </script>
 </body>
 
 </html>
