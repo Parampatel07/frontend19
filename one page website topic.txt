@@ -1,0 +1,36 @@
+Header	
+	Logo 
+	name
+	menu 
+Slider 
+Main Business concept
+	Image
+	Content
+Services
+	Regular maintainance
+	Bodyshop & Paintwork 
+	Mechanical repair 
+	BRAKE SERVICE
+	EGR REPAIR
+	DPF REGENERATE
+	SUSPENSION REPAIR
+	MAINTANANCE PARTS
+	BATTERY SERVICE
+	BODY DENTING & PAINTING
+	ELECTRICAL & ELECTRONICS REPAIR
+	ENGINE & TRANSMISSION REBUILD
+
+Let's us work upon your car 
+Brands
+
+Customer Reviews
+Book Appointment
+	Name 
+	Phone 
+	Email 
+	Time to call
+	
+Footer 
+	Address  & Contact No 
+	Google Map 
+	

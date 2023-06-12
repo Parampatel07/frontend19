@@ -1,0 +1,52 @@
+Header	
+	Logo 
+	name
+	menu 
+Slider 
+Main Business concept
+	Image
+	Content
+		Piston Club is a premier establishment dedicated to providing exceptional and expert repair services exclusively for luxury vehicles. We understand the challenges that come with owning and maintaining a premium car, which often hinder us from fully enjoying our driving experience. Recognizing the exorbitant costs associated with authorized service centers for even the most basic car maintenance, we aim to alleviate this burden and offer an affordable alternative without compromising on quality.
+Services
+	Regular maintainance
+		Introducing Precision AutoCare, the ultimate solution for premium car maintenance. With a team of skilled technicians and state-of-the-art facilities, we offer meticulous servicing, repairs, and detailing exclusively for luxury vehicles. Our commitment to excellence ensures your prized possession receives the utmost care, enhancing performance and preserving its pristine condition. Elevate your car ownership experience with Precision AutoCare.
+	Bodyshop & Paintwork 
+		Presenting Elite AutoCraft, the epitome of excellence in premium car bodywork and paint services. Our highly skilled craftsmen, equipped with cutting-edge technology, deliver flawless repairs and exquisite paintwork, restoring your vehicle to its original splendor. Trust us to revitalize your car's aesthetics and preserve its timeless allure. Experience automotive perfection with Elite AutoCraft.
+	Mechanical repair 
+		Introducing Precision AutoTech, your premier destination for premium car mechanical repairs. Our team of expert technicians, armed with advanced diagnostic tools, provides meticulous and efficient servicing for your luxury vehicle. Experience unparalleled expertise and personalized care, ensuring your car's optimal performance and reliability. Trust Precision AutoTech for automotive excellence.
+	BRAKE SERVICE
+		Ensure the safety of your loved ones by maintaining a reliable brake system. Common signs like a shaky steering wheel or piercing noises indicate potential brake issues. With our expertise, we recognize these warning signals and provide comprehensive brake inspections. Choose from our wide selection of premium European brake pads and discs, prioritizing your peace of mind.
+	EGR REPAIR
+		Have you experienced a sudden loss of acceleration and an illuminated engine check light in your vehicle? It's likely that your EGR (Exhaust Gas Recirculation) valve or motor is malfunctioning or clogged. Dealerships often recommend replacing the entire system, incurring significant costs. However, we prioritize repair over replacement, and our skilled team specializes in premium cars. We can repair your EGR system, saving you from unnecessary expenses while preserving your hard-earned money.
+	DPF REGENERATE
+		Experiencing a sudden decrease in acceleration and the appearance of a malfunctioning soot filter light are indicators of a clogged DPF (Diesel Particulate Filter) in your car. Over time, carbon emissions from your vehicle accumulate in the DPF. As it becomes full, back pressure builds up in the exhaust system, leading to reduced performance and fuel efficiency. Instead of costly system replacements, our skilled team specializes in cleaning the DPF without replacing any parts, saving you time and money.
+	SUSPENSION REPAIR
+		Frustrated by the unsettling noises and jolts coming from your car's suspension? It's likely that certain components or even the entire suspension system has suffered damage. Worn-out parts can compromise vehicle stability and driver control. Our comprehensive selection of genuine and aftermarket components encompasses everything from standard bushings to cutting-edge air suspensions. We don't just replace these parts; we ensure seamless integration and adaptation within your vehicle for optimal performance and comfort.
+	Regular car Service 
+		Avoid the temptation to delay your annual service or wait until a problem arises before seeking garage assistance. Regular servicing is essential! Our premium selection of "Made in Germany" filters, oil, coolants, and fluids ensures peace of mind, sparing you from costly repairs due to major faults. Prioritize preventive maintenance and enjoy worry-free driving.
+	BATTERY SERVICE
+		If your car battery is running low or in need of a jump start, simply contact us, and our skilled technician will promptly arrive at your location to start your vehicle. We offer a wide selection of batteries from renowned and trusted brands such as Amron, Exide, Cellforce, and more. Count on us for reliable battery solutions.
+	ELECTRICAL & ELECTRONICS REPAIR
+		Modern vehicles are equipped with numerous electrical components, including the starter motor, alternator, door locks, window switches, and more. Issues can arise in any of these systems for various reasons. At Piston Club, our specialized technicians possess the expertise to repair these systems without the need for complete replacements. Trust us to restore and optimize your vehicle's electrical functionalities efficiently.
+	ENGINE & TRANSMISSION REBUILD
+		Restoring the vital core of a vehicle is an intricate and demanding endeavor. Whether it's dealing with flood damage, water damage, overheating, or oil leakage causing internal part damage, our team of experts, hailing from renowned automotive brands like Porsche, Mercedes-Benz, and Volvo, possesses the knowledge and experience to revive engines and transmissions at a fraction of the usual cost. Trust us to breathe new life into your vehicle's powertrain.
+Let's us work upon your car 
+
+Brands
+
+Customer Reviews
+	1)  I recently had my car serviced at XYZ Auto Care, and I must say, it was an outstanding experience from start to finish. The staff was incredibly friendly and professional, making me feel confident that my vehicle was in good hands. The service itself was top-notch; they thoroughly inspected my car, addressed all the necessary maintenance tasks, and even went the extra mile to explain everything in detail. The turnaround time was impressive, and the pricing was fair and transparent. I left XYZ Auto Care feeling completely satisfied, knowing that my car received the best care possible. I highly recommend their services to anyone seeking reliable and trustworthy car servicing.
+
+	2) I recently had my car repainted at ABC Auto Services, and I am absolutely thrilled with the results. The level of craftsmanship and attention to detail displayed by their team was truly exceptional. They meticulously prepared the surface, ensuring a smooth and flawless finish. The color matching was spot-on, and the new paint gave my car a stunning, showroom-like appearance. The turnaround time was surprisingly quick, and the pricing was reasonable considering the quality of work. I couldn't be happier with the transformation my car underwent at ABC Auto Services. I highly recommend their car repaint services for an outstanding and remarkable outcome.
+
+	3)  I recently experienced a sudden breakdown on the road and reached out to XYZ Car Services for help. I must say, their response was nothing short of remarkable. Their team arrived promptly, equipped with the necessary tools and expertise to diagnose and resolve the issue. They were incredibly professional and understanding, keeping me informed throughout the process. Their swift and efficient repairs got my car up and running in no time. The pricing was reasonable, and the service was worth every penny. I am immensely grateful to XYZ Car Services for their reliable breakdown assistance. They truly saved the day and earned my highest recommendation.
+Book Appointment
+	Name 
+	Phone 
+	Email 
+	Time to call
+	
+Footer 
+	Address  & Contact No 
+	Google Map 
+	
