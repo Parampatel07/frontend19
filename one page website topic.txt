@@ -2,7 +2,7 @@ Header
 	Logo 
 	name
 	menu 
-Slider 
+Slider  
 Main Business concept
 	Image
 	Content
