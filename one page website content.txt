@@ -6,7 +6,7 @@ Slider
 Main Business concept
 	Image
 	Content
-		Piston Club is a premier establishment dedicated to providing exceptional and expert repair services exclusively for luxury vehicles. We understand the challenges that come with owning and maintaining a premium car, which often hinder us from fully enjoying our driving experience. Recognizing the exorbitant costs associated with authorized service centers for even the most basic car maintenance, we aim to alleviate this burden and offer an affordable alternative without compromising on quality.
+		CarCare is a premier establishment dedicated to providing exceptional and expert repair services exclusively for luxury vehicles. We understand the challenges that come with owning and maintaining a premium car, which often hinder us from fully enjoying our driving experience. Recognizing the exorbitant costs associated with authorized service centers for even the most basic car maintenance, we aim to alleviate this burden and offer an affordable alternative without compromising on quality.
 Services
 	Regular maintainance
 		Introducing Precision AutoCare, the ultimate solution for premium car maintenance. With a team of skilled technicians and state-of-the-art facilities, we offer meticulous servicing, repairs, and detailing exclusively for luxury vehicles. Our commitment to excellence ensures your prized possession receives the utmost care, enhancing performance and preserving its pristine condition. Elevate your car ownership experience with Precision AutoCare.
