@@ -35,11 +35,11 @@ Let's us work upon your car
 Brands
 
 Customer Reviews
-	1)  I recently had my car serviced at XYZ Auto Care, and I must say, it was an outstanding experience from start to finish. The staff was incredibly friendly and professional, making me feel confident that my vehicle was in good hands. The service itself was top-notch; they thoroughly inspected my car, addressed all the necessary maintenance tasks, and even went the extra mile to explain everything in detail. The turnaround time was impressive, and the pricing was fair and transparent. I left XYZ Auto Care feeling completely satisfied, knowing that my car received the best care possible. I highly recommend their services to anyone seeking reliable and trustworthy car servicing.
+	1)  I recently had my car serviced at CarCare, and I must say, it was an outstanding experience from start to finish. The staff was incredibly friendly and professional, making me feel confident that my vehicle was in good hands. The service itself was top-notch; they thoroughly inspected my car, addressed all the necessary maintenance tasks, and even went the extra mile to explain everything in detail. The turnaround time was impressive, and the pricing was fair and transparent. I left CarCare feeling completely satisfied, knowing that my car received the best care possible. I highly recommend their services to anyone seeking reliable and trustworthy car servicing.
 
-	2) I recently had my car repainted at ABC Auto Services, and I am absolutely thrilled with the results. The level of craftsmanship and attention to detail displayed by their team was truly exceptional. They meticulously prepared the surface, ensuring a smooth and flawless finish. The color matching was spot-on, and the new paint gave my car a stunning, showroom-like appearance. The turnaround time was surprisingly quick, and the pricing was reasonable considering the quality of work. I couldn't be happier with the transformation my car underwent at ABC Auto Services. I highly recommend their car repaint services for an outstanding and remarkable outcome.
+	2) I recently had my car repainted at CarCare Services, and I am absolutely thrilled with the results. The level of craftsmanship and attention to detail displayed by their team was truly exceptional. They meticulously prepared the surface, ensuring a smooth and flawless finish. The color matching was spot-on, and the new paint gave my car a stunning, showroom-like appearance. The turnaround time was surprisingly quick, and the pricing was reasonable considering the quality of work. I couldn't be happier with the transformation my car underwent at CarCare Services. I highly recommend their car repaint services for an outstanding and remarkable outcome.
 
-	3)  I recently experienced a sudden breakdown on the road and reached out to XYZ Car Services for help. I must say, their response was nothing short of remarkable. Their team arrived promptly, equipped with the necessary tools and expertise to diagnose and resolve the issue. They were incredibly professional and understanding, keeping me informed throughout the process. Their swift and efficient repairs got my car up and running in no time. The pricing was reasonable, and the service was worth every penny. I am immensely grateful to XYZ Car Services for their reliable breakdown assistance. They truly saved the day and earned my highest recommendation.
+	3)  I recently experienced a sudden breakdown on the road and reached out to CarCare Services for help. I must say, their response was nothing short of remarkable. Their team arrived promptly, equipped with the necessary tools and expertise to diagnose and resolve the issue. They were incredibly professional and understanding, keeping me informed throughout the process. Their swift and efficient repairs got my car up and running in no time. The pricing was reasonable, and the service was worth every penny. I am immensely grateful to CarCare Services for their reliable breakdown assistance. They truly saved the day and earned my highest recommendation.
 
 	
 Book Appointment
@@ -50,5 +50,5 @@ Book Appointment
 	
 Footer 
 	Address  & Contact No 
-	Google Map 
+		Map 
 	
