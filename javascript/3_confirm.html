@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example of confirm</h1>
+    <form method="post" action="success.html" onsubmit="return ActivateSubscription();">
+        <input type="submit" value="activate subsription" />
+        <input type="submit" value="do not want to continue" />
+    </form> 
+    <script>
+        //user defined function
+        //with return value without argument
+        function ActivateSubscription()
+        {
+            var response = confirm("Are you sure you want to do this?");
+            return response;
+        }
+    </script>
+</body>
+</html>
