@@ -1,0 +1,7 @@
+write a javascript code to calculate and return simple interest of given amount, rate and year. use prompt and document.write method and user defined function.
+
+
+write a javascript code to convert given minutes into hours and minute. use prompt and document.write method and user defined function.
+input : 375
+output : hours 6 minute 15
+

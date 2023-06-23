@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>example of prompt and write method</h1>
+    <hr/>
+
+    <script>
+        //user defined function (UDF)
+        //with return value with argument function
+        function add(x,y)
+        {
+            let temp = x + y; //local variable
+            return temp;
+        }
+        function sub(x,y)
+        {
+            let temp = x - y;
+            return temp;
+        }
+        var message1 = "enter first number";
+        var message2 = "enter second number";
+        var defaultvalue = 1;
+        var num1 = prompt(message1,defaultvalue);
+        var num2 = prompt(message2,defaultvalue);
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var addition = add(num1,num2);
+        var substraction = sub(num1,num2);
+        document.write("addition =",addition,"<br/> substraction =",substraction);
+        
+    </script>
+</body>
+</html>
