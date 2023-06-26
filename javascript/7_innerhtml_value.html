@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple interest calculator</h1> <hr/>
+    <form action="success.html" onsubmit="return CalculateInterest();">
+        <table border="2" align="center" width="50%" cellpadding="10">
+            <tr>
+                <td>Amount</td>
+                <td>
+                    <input type="number" id="amount" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Rate</td>
+                <td>
+                    <input type="number" id="rate" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Year</td>
+                <td>
+                    <input type="number" id="year" required />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Calculate Interest" id="submit" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" id="output"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function CalculateInterest()
+        {
+            let amount = parseInt(document.getElementById('amount').value);
+            let rate = parseInt(document.getElementById('rate').value);
+            let year = parseInt(document.getElementById('year').value);
+            let interest = (amount * rate * year) / 100;
+            document.getElementById("output").innerHTML= interest;
+            return false;
+        }
+    </script>
+</body>
+</html>

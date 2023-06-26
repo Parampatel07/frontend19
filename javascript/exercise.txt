@@ -5,3 +5,10 @@ write a javascript code to convert given minutes into hours and minute. use prom
 input : 375
 output : hours 6 minute 15
 
+
+write a javascript code to calculate and return simple interest of given amount, rate and year. using html form as per example 7.
+
+
+write a javascript code to convert given minutes into hours and minute. using html form as per example 7.
+input : 375
+output : hours 6 minute 15
