@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dynamic table geneator</h1>
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td width="20%" valign="top">
+                <form action="">
+                    <table border="1" width="100%" cellpadding="10">
+                        <tr>
+                            <td>
+                                <input type="number" id="rows" required
+                                placeholder="Enter rows" onblur="GenerateTable();" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" id="columns" required
+                                placeholder="Enter Columns" onblur="GenerateTable();" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Select loop </b> <br/>
+                                <label for="while">
+                                    <input onchange="GenerateTable();" id="while" type="radio" name="loop" value="while" />While
+                                </label>
+                                <br/>
+                                <label for="for">
+                                    <input onchange="GenerateTable();" id="for" type="radio" name="loop" value="for" />For
+                                </label>
+                                <br/>
+                                <label for="dowhile">
+                                    <input onchange="GenerateTable();" id="dowhile" type="radio" name="loop" value="dowhile" />Do While
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+            <td valign="top">
+                <table width="100%" border="1" bgcolor="yellow" id="output"></table>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function GenerateTable()
+        {
+            let rows = document.getElementById("rows");
+            let columns = document.getElementById("columns");
+            let output = document.getElementById("output");
+            let temp = '';
+            var totalrow = parseInt(rows.value);
+            for(var i=1;i<=totalrow;i=i+1)
+            {
+                temp+='<tr>';
+                var totalcolumn = parseInt(columns.value);
+                for(var c=1;c<=totalcolumn;c++)
+                {
+                    temp+=`<td>${c}</td>`;
+                }    
+                temp+='</tr>';
+            }
+            output.innerHTML=temp;  
+        }
+    </script>
+</body>
+</html>
