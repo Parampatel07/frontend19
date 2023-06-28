@@ -49,22 +49,52 @@
         </tr>
     </table>
     <script>
-        function GenerateTable()
+        // function getId(id)
+        // {
+        //     return document.getElementById(id);
+        // }
+        let $ = (id) => document.getElementById(id);
+        let GenerateTable = function()
         {
-            let rows = document.getElementById("rows");
-            let columns = document.getElementById("columns");
-            let output = document.getElementById("output");
+            let rows = $("rows");
+            let columns = $("columns");
+            let output = $("output");
+            var SelectedLoop = document.querySelector("input[name='loop']:checked").value;
+            console.log(SelectedLoop);
             let temp = '';
             var totalrow = parseInt(rows.value);
-            for(var i=1;i<=totalrow;i=i+1)
+            var totalcolumn = parseInt(columns.value);
+            if(SelectedLoop === 'for')
             {
-                temp+='<tr>';
-                var totalcolumn = parseInt(columns.value);
-                for(var c=1;c<=totalcolumn;c++)
+                for(let i=1;i<=totalrow;i=i+1)
                 {
-                    temp+=`<td>${c}</td>`;
-                }    
-                temp+='</tr>';
+                    temp+='<tr>';
+                    for(let c=1;c<=totalcolumn;c++)
+                    {
+                        temp+=`<td>${c}</td>`;
+                    }    
+                    temp+='</tr>';
+                }
+            }
+            else if(SelectedLoop === 'while')
+            {
+                let i=1;
+                while(i<=totalrow)
+                {
+                    temp+='<tr>';
+                    let c = 1;
+                    while(c<=totalcolumn)
+                    {
+                        temp+=`<td>${c}</td>`;
+                        c++;
+                    }
+                    temp+='</tr>';
+                    i++;
+                }
+            }
+            else if(SelectedLoop === 'dowhile')
+            {
+
             }
             output.innerHTML=temp;  
         }
