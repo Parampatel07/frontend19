@@ -40,6 +40,13 @@
                                 </label>
                             </td>
                         </tr>
+                    
+                        <tr>
+                            <td>
+                                <input type="button" value="Reset" id="reset"
+                                onclick="ResetAll();">
+                            </td>
+                        </tr>
                     </table>
                 </form>
             </td>
@@ -49,11 +56,21 @@
         </tr>
     </table>
     <script>
-        // function getId(id)
-        // {
-        //     return document.getElementById(id);
-        // }
         let $ = (id) => document.getElementById(id);
+        function val(id,value=null)
+        {
+            if(value!=null)
+                $(id).value = value;
+            else 
+                return $(id).value;
+        }
+        function html(id,text=null)
+        {
+            if(text!=null)
+                $(id).innerHTML = text;
+            else 
+                $(id).innerHTML = '';
+        }
         let GenerateTable = function()
         {
             let rows = $("rows");
@@ -62,8 +79,8 @@
             var SelectedLoop = document.querySelector("input[name='loop']:checked").value;
             console.log(SelectedLoop);
             let temp = '';
-            var totalrow = parseInt(rows.value);
-            var totalcolumn = parseInt(columns.value);
+            var totalrow = parseInt(val("rows"));
+            var totalcolumn = parseInt(val("columns"));
             if(SelectedLoop === 'for')
             {
                 for(let i=1;i<=totalrow;i=i+1)
@@ -75,6 +92,7 @@
                     }    
                     temp+='</tr>';
                 }
+                
             }
             else if(SelectedLoop === 'while')
             {
@@ -96,7 +114,13 @@
             {
 
             }
-            output.innerHTML=temp;  
+            output.innerHTML=temp; 
+            html('output',temp);
+        }
+        let ResetAll = function(){
+            val("rows",'');
+            val("columns",'');
+            html('output');
         }
     </script>
 </body>
