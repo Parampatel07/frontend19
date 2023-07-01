@@ -2,7 +2,7 @@ write a javascript code to calculate and return simple interest of given amount,
 
 
 write a javascript code to convert given minutes into hours and minute. use prompt and document.write method and user defined function.
-input : c
+input : 375
 output : hours 6 minute 15
 
 

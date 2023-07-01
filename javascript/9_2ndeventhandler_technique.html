@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table border="2" align="center" width="50%" cellpadding="10">
+            <tr>
+                <td>
+                    <label for="number1">Number 1:</label>
+                    <input type="number" id="number1" name="number1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="number2">Number 2:</label>
+                    <input type="number" id="number2" name="number2" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Add" id="add" />
+                    <input type="button" value="Sub" id="sub" />
+                    <input type="button" value="mul" id="mul" />
+                    <input type="button" value="div" id="div" />
+                </td>
+            </tr>
+            <tr>
+                <td id="output">
+
+                </td>
+            </tr>
+        </table>
+        <script>
+            function Calculate()
+            {
+               let ButtonId = this.id;
+               if(ButtonId === "add")
+               {
+
+               }
+               else if(ButtonId === "sub")
+               {
+
+               }
+               else if(ButtonId === "mul")
+               {
+
+               }
+               else if(ButtonId === "div")
+               {
+                
+               }
+            }
+            //declare variable for each button 
+            var add = document.querySelector("#add");
+            var sub = document.querySelector("#sub");
+            var mul = document.querySelector("#mul");
+            var div = document.querySelector("#div");
+
+            add.onclick = Calculate;
+            sub.onclick = Calculate;
+            mul.onclick = Calculate;
+            div.onclick = Calculate;
+
+        </script>
+    </form>
+</body>
+</html>
