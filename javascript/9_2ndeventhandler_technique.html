@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form action="">
         <table border="2" align="center" width="50%" cellpadding="10">
             <tr>
                 <td>
                     <label for="number1">Number 1:</label>
-                    <input type="number" id="number1" name="number1" required>
+                    <input type="text" id="number1" name="number1" required />
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="number2">Number 2:</label>
-                    <input type="number" id="number2" name="number2" required>
+                    <input type="text" id="number2" name="number2" required />
                 </td>
             </tr>
             <tr>
@@ -35,25 +37,65 @@
             </tr>
         </table>
         <script>
-            function Calculate()
-            {
-               let ButtonId = this.id;
-               if(ButtonId === "add")
-               {
+            var number1 = document.getElementById('number1');
+            var number2 = document.getElementById('number2');
 
-               }
-               else if(ButtonId === "sub")
-               {
+            function isValidInput() {
+                var isValid = true;
+                if(number1.value === '')
+                {
+                    alert('first number can not be blank');
+                    isValid = false;
+                }
+                else 
+                {
+                    if(isNaN(number1.value)==true)
+                    {
+                        alert('first number is invalid value');
+                        isValid = false;
+                    }
+                }
 
-               }
-               else if(ButtonId === "mul")
-               {
+                if(number2.value === '')
+                {
+                    alert('second number can not be blank');
+                    isValid = false;
+                }
+                else 
+                {
+                    if(isNaN(number2.value)==true)
+                    {
+                        alert('second number is invalid value');
+                        isValid = false;
+                    }
+                }
+                return isValid;
+            }
+            function Calculate() {
+                let ButtonId = this.id;
+                if (isValidInput() == true) 
+                {
+                    let num1 = parseInt(number1.value);
+                    let num2 = parseInt(number2.value);
+                    let output = document.getElementById('output');
+                    if (ButtonId === "add") 
+                    {
+                        output.innerHTML = num1 + num2;
+                    }
+                    else if (ButtonId === "sub") 
+                    {
+                        output.innerHTML = num1 - num2;
+                    }
+                    else if (ButtonId === "mul") 
+                    {
+                        output.innerHTML = num1 * num2;
+                    }
+                    else if (ButtonId === "div") 
+                    {
+                        output.innerHTML = (num1 / num2).toFixed(2);
+                    }
+                }
 
-               }
-               else if(ButtonId === "div")
-               {
-                
-               }
             }
             //declare variable for each button 
             var add = document.querySelector("#add");
@@ -69,4 +111,5 @@
         </script>
     </form>
 </body>
+
 </html>
