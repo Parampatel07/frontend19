@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1st technique to create object</h1> <hr/>
+    <table id="output" border="1" align="center" width="50%">
+
+    </table>
+    <script>
+        //1st technique to create object
+        //var objectname = { 
+            //property
+            // property-name:value,
+            // property-name:value,
+            // function-name:function(){
+
+            // }
+        // }
+        //example
+        var book = {
+            'name':'Learning Javascript',
+            'price':500,
+            'author':'Ankit Patel',
+            display:function(){
+                let output = document.getElementById('output');
+                output.innerHTML=`<tr><td>${this.name}</td><td>${this.price}</td><td>${this.author}</td></tr>`;
+            }
+        }        
+        book.display();
+        
+    </script>
+</body>
+</html>
