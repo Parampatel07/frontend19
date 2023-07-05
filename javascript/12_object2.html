@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table width="90%" align="center" cellpadding="10" border="2">
+        <tr>
+            <td width="25%" valign="top">
+                <form action="">
+                    <table border="2" width="100%" cellpadding="10">
+                        <tr>
+                            <td align="center">
+                                <h1>Add Student</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="fullname" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" id="email" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Select Gender</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="male">
+                                    <input type="radio" name="gender" id="male" value="male" required />male
+                                </label>
+                                <br>
+                                <label for="female">
+                                    <input type="radio" name="gender" id="female" value="female" required />female
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <button type="submit" id="submit">Add Student</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+            <td width="75%" valign="top">
+                <table border="1" align="center" cellpadding="10" width="100%">
+                    <thead>
+                        <tr>
+                            <td>SrNo</td>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Gender</td>
+                            <td>Edit</td>
+                            <td>Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody id="output">
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var output = document.getElementById('output');
+        //create template 
+        var Student = new Object({
+            //property variable
+            name: '',
+            email: '',
+            gender: true,
+            Add:function(){
+               let row = `<tr><td></td><td>${this.name}</td><td>${this.email}</td><td>${this.gender}</td><td></td><td></td></tr>`;
+               output.innerHTML+=row;
+            }
+        });
+
+        //create object variable
+        var s1 = Student;
+        s1.name = "Ram sharma";
+        s1.email = "ram@gmail.com";
+        s1.gender = true;
+        s1.Add();   
+
+    </script>
+</body>
+</html>
