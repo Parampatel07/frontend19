@@ -76,6 +76,18 @@
 
     <script>
         var output = document.getElementById('output');
+        var submit = document.getElementById('submit');
+        var fullname = document.getElementById('fullname');
+        var email = document.getElementById('email');
+        var srno = 1;
+        submit.onclick = function(){
+            var s1 = Student;
+            s1.name = fullname.value;
+            s1.email = email.value;
+            s1.gender = document.querySelector("input[name='gender']:checked").value;
+            s1.Add();   
+            return false;
+        }
         //create template 
         var Student = new Object({
             //property variable
@@ -83,18 +95,42 @@
             email: '',
             gender: true,
             Add:function(){
-               let row = `<tr><td></td><td>${this.name}</td><td>${this.email}</td><td>${this.gender}</td><td></td><td></td></tr>`;
+               let row = `<tr><td>${srno}</td><td>${this.name}</td><td>${this.email}</td><td>${this.gender}</td><td><button class='btnedit'>Edit</button></td><td><button class='btndelete'>Delete</button></td></tr>`;
                output.innerHTML+=row;
+               fullname.value = '';
+               email.value = '';
+               document.getElementById('male').checked = false;
+               document.getElementById('female').checked = false;
+               
+               let btndelete = document.getElementsByClassName('btndelete');
+               let length = btndelete.length;
+               
+               for(let index=0;index<length;index++)
+               {
+                   btndelete[index].onclick = function(){
+                       this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+                    }
+                } 
+                let btnedit = document.getElementsByClassName('btnedit');
+                for(let index=0;index<length;index++)
+                {
+                    btnedit[index].onclick = function(){
+                            fullname.value = this.parentNode.parentNode.childNodes[1].innerHTML;
+                            email.value = this.parentNode.parentNode.childNodes[2].innerHTML;
+                            if(this.parentNode.parentNode.childNodes[3].innerHTML === 'male')
+                                document.getElementById('male').checked = true;
+                            else 
+                                document.getElementById('female').checked = true;
+                            submit.innerHTML = "Save changes";
+                        }
+                    } 
+
+               srno++;
             }
         });
 
         //create object variable
-        var s1 = Student;
-        s1.name = "Ram sharma";
-        s1.email = "ram@gmail.com";
-        s1.gender = true;
-        s1.Add();   
-
+       
     </script>
 </body>
 </html>
