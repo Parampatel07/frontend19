@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
 </head>
+
 <body>
     <table width="90%" align="center" cellpadding="10" border="2">
         <tr>
@@ -55,7 +58,7 @@
                 </form>
             </td>
             <td width="75%" valign="top">
-                <table border="1" align="center" cellpadding="10" width="100%">
+                <table id="myTable" border="1" align="center" cellpadding="10" width="100%">
                     <thead>
                         <tr>
                             <td>SrNo</td>
@@ -73,19 +76,23 @@
             </td>
         </tr>
     </table>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="//cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
     <script>
+        let table = new DataTable('#myTable'); //plugin activator code 
+
         var output = document.getElementById('output');
         var submit = document.getElementById('submit');
         var fullname = document.getElementById('fullname');
         var email = document.getElementById('email');
+        var activerow = null;
         var srno = 1;
-        submit.onclick = function(){
+        submit.onclick = function () {
             var s1 = Student;
             s1.name = fullname.value;
             s1.email = email.value;
             s1.gender = document.querySelector("input[name='gender']:checked").value;
-            s1.Add();   
+            s1.Add();
             return false;
         }
         //create template 
@@ -94,43 +101,55 @@
             name: '',
             email: '',
             gender: true,
-            Add:function(){
-               let row = `<tr><td>${srno}</td><td>${this.name}</td><td>${this.email}</td><td>${this.gender}</td><td><button class='btnedit'>Edit</button></td><td><button class='btndelete'>Delete</button></td></tr>`;
-               output.innerHTML+=row;
-               fullname.value = '';
-               email.value = '';
-               document.getElementById('male').checked = false;
-               document.getElementById('female').checked = false;
-               
-               let btndelete = document.getElementsByClassName('btndelete');
-               let length = btndelete.length;
-               
-               for(let index=0;index<length;index++)
-               {
-                   btndelete[index].onclick = function(){
-                       this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+            Add: function () {
+                $('#myTable').DataTable().destroy();
+                if (submit.innerHTML === 'Add Student') {
+                    let row = `<tr><td>${srno}</td><td>${this.name}</td><td>${this.email}</td><td>${this.gender}</td><td><button class='btnedit'>Edit</button></td><td><button class='btndelete'>Delete</button></td></tr>`;
+                    output.innerHTML += row;
+                    fullname.value = '';
+                    email.value = '';
+                    document.getElementById('male').checked = false;
+                    document.getElementById('female').checked = false;
+
+                    let btndelete = document.getElementsByClassName('btndelete');
+                    let length = btndelete.length;
+
+                    for (let index = 0; index < length; index++) {
+                        btndelete[index].onclick = function () {
+                            this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+                        }
                     }
-                } 
-                let btnedit = document.getElementsByClassName('btnedit');
-                for(let index=0;index<length;index++)
-                {
-                    btnedit[index].onclick = function(){
-                            fullname.value = this.parentNode.parentNode.childNodes[1].innerHTML;
-                            email.value = this.parentNode.parentNode.childNodes[2].innerHTML;
-                            if(this.parentNode.parentNode.childNodes[3].innerHTML === 'male')
+                    let btnedit = document.getElementsByClassName('btnedit');
+                    for (let index = 0; index < length; index++) {
+                        btnedit[index].onclick = function () {
+                            activerow = this.parentNode.parentNode;
+                            fullname.value = activerow.childNodes[1].innerHTML;
+                            email.value = activerow.childNodes[2].innerHTML;
+                            if (activerow.childNodes[3].innerHTML === 'male')
                                 document.getElementById('male').checked = true;
-                            else 
+                            else
                                 document.getElementById('female').checked = true;
                             submit.innerHTML = "Save changes";
                         }
-                    } 
+                    }
 
-               srno++;
+                    srno++;
+                }
+                else 
+                {
+                    activerow.childNodes[1].innerHTML = fullname.value;   
+                    activerow.childNodes[2].innerHTML = email.value;   
+                    activerow.childNodes[3].innerHTML = this.gender;   
+                    submit.innerHTML = "Add Student";
+                }
+                $('#myTable').DataTable().draw();
             }
+          
         });
 
         //create object variable
-       
+
     </script>
 </body>
+
 </html>
