@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example of single level inheritance</h1>
+    <p>use console for output</p>
+    <script>
+        //single level inheritance 
+        //parent/super/root class
+        class KB
+        {
+            constructor(bytes)
+            {
+                this.bytes = bytes;
+                console.log('KB class constructor called...');
+            }
+            getKB()
+            {
+                let temp = this.bytes /1024;
+                return temp;
+            }
+        }
+        //sub/child/derived class
+        class MB extends KB
+        {
+            constructor(bytes)
+            {
+                super(bytes); //calling parent class constructor
+                console.log('MB class constructor is called....');
+            }
+            getMB()
+            {
+                let temp = super.getKB() / 1024;
+                return temp;
+            }
+        }
+        var bytes = parseInt(prompt("enter bytes"));
+        // var k = new KB(bytes);
+        // var kilobytes = k.getKB();
+        // console.log(kilobytes);
+
+        var m = new MB(bytes); //calling child class 
+        var megabytes = m.getMB();
+        console.log(megabytes);
+    </script>
+</body>
+</html>
