@@ -1,0 +1,2 @@
+Create html page using react that will display all the gujarati dish name in html table. table should display 3 dish in each row. display total 30 dish name.
+
