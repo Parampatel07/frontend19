@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hierarchical inheritance</h1> 
+    <hr>
+    <p>use console to view output</p>
+    <script>
+        class Shape 
+        {
+            pi = 3.14;
+            getSquare(number)
+            {
+                let temp = number * number;
+                return temp;
+            }
+        }
+        class Circle extends Shape 
+        {
+            constructor(radius)
+            {
+                super();
+                this.radius = radius;
+            }
+            getArea()
+            {
+                let temp = this.pi * super.getSquare(this.radius);
+                return temp;
+            }
+        }
+        class Sphere extends Circle 
+        {
+            constructor(radius)
+            {
+                super(radius);
+                console.log('Sphere class constructor called...');
+            }
+            //method overridding
+            getArea()
+            {
+                let temp = 4 * super.getArea();
+                return temp;
+            }
+        }
+        class Cyliender extends Shape
+        {
+            constructor(radius,height)
+            {
+                super();
+                this.radius = radius;
+                this.height = height;
+            }
+            getArea()
+            {
+                let temp = (2 * this.pi * this.radius * this.height) + (2 * this.pi * super.getSquare(this.radius));
+                return temp;
+            }
+
+        }
+
+        var radius = parseInt(prompt("Enter radius"));
+        var c1 = new Circle(radius);
+        var area = c1.getArea();
+        console.log("Circle area ",area);
+
+        radius = parseInt(prompt("Enter radius"));
+        var height = parseInt(prompt("Enter height"));
+        var c2 = new Cyliender(radius,height);
+        area = c2.getArea();
+        console.log("Cyliender area ",area);
+
+        var sp1 = new Sphere(radius);
+        area = sp1.getArea();
+        console.log("Sphere area ",area);
+
+        
+    </script>
+</body>
+</html>

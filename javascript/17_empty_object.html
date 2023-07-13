@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>User Registration Form</h2>
+    <hr/>
+    <form action="" method="POST" onsubmit="return Register();">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        let Register = function(){
+            let user = {}; //empty object
+            //or 
+            //let user = new Object();
+            console.log(user);
+            //adding property into object
+            user['email'] = document.getElementById('email').value;
+            user['password'] = document.getElementById('password').value;
+            user['mobile'] = document.getElementById('mobile').value;
+            user['dob'] = document.getElementById('birthdate').value;
+            console.log(user);
+            return false;
+        }
+    </script>
+</body>
+
+</html>
